@@ -65,7 +65,7 @@ namespace System.Collections.Generic {
 			// initialize to needed size (if determinable)
 			ICollection <T> c = collection as ICollection <T>;
 			if (c == null) {
-				_items = EmptyArray<T>.Value;;
+				_items = EmptyArray<T>.Value;
 				AddEnumerable (collection);
 			} else {
 				_size = c.Count;
